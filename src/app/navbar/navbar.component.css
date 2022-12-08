@@ -1,0 +1,30 @@
+img{
+  width:100% !important;
+}
+
+nav{
+  background-color:#141329 !important;
+  color: white !important;
+z-index: 9999999999999999999999999;
+}
+.navbar-toggler{
+  background-color: white;
+}
+
+.navbar-brand{
+  width:30px !important;
+}
+li a{
+  color: white !important;
+  font-size: 20px;
+}
+a{
+  color: white;
+  font-weight: 400;
+}
+span{
+  font-size: 18px;
+}
+.nav-link:hover{
+  color: #64ff10 !important;
+}

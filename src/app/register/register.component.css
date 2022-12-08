@@ -1,0 +1,35 @@
+#main-home{
+  position: absolute;
+  top:0;
+  width: 100%;
+  z-index:88;
+  bottom: 0;
+  font-weight: 600;
+  color: white !important;
+background-color: #141329;
+}
+.container-fluid{
+  margin-top: 90px !important;
+}
+body{
+  color: white !important;
+  overflow-x: hidden;
+}
+label{
+  font-weight:500;
+  font-size:18px;
+}
+input{
+  background-color: black !important;
+  border: 2px solid BLUE;
+  color: wheat !important;
+}
+button{
+  background-color:blue ;
+  color: white;
+  float: right;
+  clear:both;
+}
+button:hover{
+  background-color:#2B2B3E !important;
+}

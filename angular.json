@@ -23,9 +23,21 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/animate.css/animate.css",
+    "node_modules/slick-carousel/slick/slick-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "node_modules/assets/js/jquery.particleground.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5f3d185b-769a-4ef3-b769-b824e2751ab7"
   }
 }

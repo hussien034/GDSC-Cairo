@@ -1,0 +1,31 @@
+<p>login works!</p>
+<section id="main-home">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-6 m-auto">
+        <div class="cont-aya">
+          <h1 class="text-center">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</h1>
+        <p class="Qr">ٱقۡرَأۡ بِٱسۡمِ رَبِّكَ ٱلَّذِي خَلَقَ (1) خَلَقَ ٱلۡإِنسَٰنَ مِنۡ عَلَقٍ (2) ٱقۡرَأۡ وَرَبُّكَ ٱلۡأَكۡرَمُ (3) ٱلَّذِي عَلَّمَ بِٱلۡقَلَمِ (4) عَلَّمَ ٱلۡإِنسَٰنَ مَا لَمۡ يَعۡلَمۡ (5)</p>
+        <h1 class="text-center">صدق اللَّهُ العظيم</h1>
+        </div>
+        <p class="alert text-center ">Please If You Visit The GDSC Cairo E-learning ,Please Register Firstly </p>
+      <form [formGroup]="loginData" (ngSubmit)="sendData()">
+        <label class="mt-1">Email :</label>
+        <input class="form-control mt-1" formControlName='email'>
+        <div class="alert alert-danger mt-2" *ngIf="loginData.get('email')?.invalid && loginData.get('email')?.touched" >
+          <p *ngIf="loginData.get('email')?.errors?.['required']">email is required</p>
+        </div>
+        <label class="mt-3">Password :</label>
+        <input class="form-control mt-1" formControlName='password' type="password">
+        <div class="alert alert-danger mt-2" *ngIf="loginData.get('password')?.invalid && loginData.get('password')?.touched">
+          <p *ngIf="loginData.get('password')?.errors?.['required']">passowrd is required</p>
+        </div>
+        <button [disabled]="loginData.invalid" type="submit" class="btn mt-3 mb-4 form-control">Submit</button>
+
+      </form>
+  </div>
+ </div>
+  </div>
+</section>
+
